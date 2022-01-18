@@ -103,6 +103,41 @@ Set the maximum number of frames to buffer. Default is 5.
 
 @end table
 
+@section AudioToolbox
+
+AudioToolbox input device.
+
+Allows native input from CoreAudio devices on OSX.
+
+@subsection Options
+
+AudioToolbox supports the following options:
+
+@table @option
+
+@item channels
+Set the number of channels. Default is device's default.
+
+@item frames_queue_length
+Maximum of buffers in the input queue
+
+@item buffer_frame_size
+Buffer frame size, gouverning internal latency
+
+@item big_endian
+Return big endian samples
+
+@item sample_format
+Sample format
+
+@end table
+
+@subsection Examples
+
+@itemize
+
+@end itemize
+
 @section avfoundation
 
 AVFoundation input device.

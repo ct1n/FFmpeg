@@ -16,6 +16,7 @@ OBJS-$(HAVE_LIBC_MSVCRT)                 += file_open.o
 OBJS-$(CONFIG_ALSA_INDEV)                += alsa_dec.o alsa.o timefilter.o
 OBJS-$(CONFIG_ALSA_OUTDEV)               += alsa_enc.o alsa.o
 OBJS-$(CONFIG_ANDROID_CAMERA_INDEV)      += android_camera.o
+OBJS-$(CONFIG_AUDIOTOOLBOX_INDEV)        += audiotoolbox_dec.o
 OBJS-$(CONFIG_AUDIOTOOLBOX_OUTDEV)       += audiotoolbox.o
 OBJS-$(CONFIG_AVFOUNDATION_INDEV)        += avfoundation.o
 OBJS-$(CONFIG_BKTR_INDEV)                += bktr.o

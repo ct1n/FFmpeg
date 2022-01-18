@@ -31,6 +31,7 @@ extern const FFInputFormat  ff_alsa_demuxer;
 extern const FFOutputFormat ff_alsa_muxer;
 extern const FFInputFormat  ff_android_camera_demuxer;
 extern const FFOutputFormat ff_audiotoolbox_muxer;
+extern const FFInputFormat  ff_audiotoolbox_demuxer;
 extern const FFInputFormat  ff_avfoundation_demuxer;
 extern const FFInputFormat  ff_bktr_demuxer;
 extern const FFOutputFormat ff_caca_muxer;
