@@ -504,7 +504,7 @@ static const AVClass audiotoolbox_class = {
     .item_name  = av_default_item_name,
     .option     = options,
     .version    = LIBAVUTIL_VERSION_INT,
-    .category   = AV_CLASS_CATEGORY_DEVICE_VIDEO_INPUT,
+    .category   = AV_CLASS_CATEGORY_DEVICE_AUDIO_INPUT,
 };
 
 const FFInputFormat ff_audiotoolbox_demuxer = {
