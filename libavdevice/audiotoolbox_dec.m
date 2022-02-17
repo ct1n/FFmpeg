@@ -407,6 +407,11 @@ static int audiotoolbox_get_device_list(AVFormatContext *avctx, AVDeviceInfoList
         ret = AVERROR(ENOMEM);
         goto fail;
     }
+    avdevice_info->media_types = av_malloc_array(1, sizeof(enum AVMediaType));
+    if (avdevice_info->media_types) {
+        avdevice_info->nb_media_types = 1;
+        avdevice_info->media_types[0] = AVMEDIA_TYPE_AUDIO;
+    }
 
     if ((ret = av_dynarray_add_nofree(&device_list->devices,
                                       &device_list->nb_devices, avdevice_info)) < 0)
@@ -469,6 +474,11 @@ static int audiotoolbox_get_device_list(AVFormatContext *avctx, AVDeviceInfoList
         if (!avdevice_info->device_name || !avdevice_info->device_description) {
             ret = AVERROR(ENOMEM);
             goto fail;
+        }
+        avdevice_info->media_types = av_malloc_array(1, sizeof(enum AVMediaType));
+        if (avdevice_info->media_types) {
+            avdevice_info->nb_media_types = 1;
+            avdevice_info->media_types[0] = AVMEDIA_TYPE_AUDIO;
         }
 
         if ((ret = av_dynarray_add_nofree(&device_list->devices,
