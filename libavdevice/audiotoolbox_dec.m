@@ -29,6 +29,7 @@
 #import <CoreMedia/CoreMedia.h>
 
 #include "libavutil/channel_layout.h"
+#include "libavutil/mem.h"
 #include "libavformat/demux.h"
 #include "libavformat/internal.h"
 #include "avdevice.h"
